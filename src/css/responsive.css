@@ -1,0 +1,84 @@
+@media(max-width: 548px){
+    .card{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr;
+        height: auto;
+    }
+
+    .card .image-card{
+        background: url(../images/bg-main-mobile.png) no-repeat;
+        background-size: cover;
+    }
+
+    .card .image-card .card-front{
+        left: 7%;
+        top: 45%;
+        width: 70%;
+        height: 68%;
+    }
+
+    .card .image-card .card-back{
+        width: 70%;
+        height: 68%;
+        left: 20%;
+        top: 8%;
+        z-index: 0;
+    }
+
+    .card .info{
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+
+    .card .image-card .card-front .info-card{
+        margin-top: 2.5rem;
+    }
+    
+    .card .image-card .card-front .info-card p{
+        font-size: 1rem;
+    }
+    
+    .card .image-card .card-front .name-exp{
+        margin-top: 1.5rem;
+    }
+
+    .card .image-card .card-front .name-exp p{
+        font-size: .6rem;
+    }
+
+    .card .info .card-name input, .card .info .card-number input{
+        width: 100%;
+    }
+
+    .card .info .card-name{
+        margin: 1rem 0 .5rem;
+    }
+
+    .card .info .card-number{
+        margin: .5rem 0;
+    }
+
+    .card .info .exp{
+        gap: .5rem;
+    }
+
+    .card .info .exp .cvc{
+        margin: 0;
+    }
+
+    #form{
+        width: 85%;
+    }
+
+    .card .info .exp .exp-date input{
+        width: 80px;
+    }
+
+    .card .info .exp .cvc input{
+        width: 100%;
+    }
+
+    .card .btn{
+        width: 100%;
+    }
+}

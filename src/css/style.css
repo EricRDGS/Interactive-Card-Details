@@ -1,0 +1,195 @@
+html{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 0.7fr 1.5fr;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.card .image-card{
+    background: url(../images/bg-main-desktop.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.card .image-card .card-front{
+    background: url(../images/bg-card-front.png) no-repeat center;
+    width: 390px;
+    height: 215px;
+    border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    padding: 1rem;
+}
+
+.card .image-card .card-front .circle{
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    position: relative;
+}
+
+.card .image-card .card-front .circle::after{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    position: absolute;
+    left: 130%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card .image-card .card-front .info-card{
+    margin-top: 3rem;
+    color: #ffffff;
+}
+
+.card .image-card .card-front .info-card p{
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.card .image-card .card-front .name-exp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.card .image-card .card-front .name-exp p{
+    font-size: 12px;
+}
+
+.card .image-card .card-back{
+    background: url(../images/bg-card-back.png) no-repeat center;
+    width: 390px;
+    height: 215px;
+    border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+    bottom: 7%;
+    left: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card .image-card .card-back p{
+    color: #ffffff;
+    margin-right: 1.5rem;
+}
+
+.card .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8rem;
+}
+
+.card .info .card-name, .card .info .card-number{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.card .info .card-name input, .card .info .card-number input{
+    width: 350px;
+    padding: 7px;
+}
+
+.card .info .exp .exp-date .dates input:first-child{
+    margin-right: 5px
+}
+
+.card .info .exp .exp-date .dates{
+    display: flex;
+}
+
+.card .info .exp{
+    display: flex;
+}
+
+.card .info .exp .exp-date input{
+    width: 60px;
+    padding: 7px;
+}
+
+.card .info .exp .cvc{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 40px;
+}
+
+.card .info .exp .cvc input{
+    width: 150px;
+    padding: 7px;
+}
+
+label{
+    line-height: 30px;
+    color: var(--neutral-very-dark);
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid var(--neutral-light-grayish);
+}
+
+.card .btn{
+    margin-top: 25px;
+    width: 350px;
+    height: 40px;
+    color: var(--neutral-light-grayish);
+    background-color: var(--neutral-very-dark);
+    border-radius: 8px;
+    border: none;
+}
+
+.invalid{
+    border-color: red;
+}
+
+.error{
+    display: none;
+    color: var(--primary-red);
+    font-size: 8px;
+}
+
+.card .info .thank-you{
+    text-align: center;
+}
+
+.card .info .thank-you img{
+    width: 50px;
+    height: 50px;
+}
+
+.card .info .thank-you h3{
+    color: var(--neutral-very-dark);
+    letter-spacing: 3px;
+    margin-top: 1rem;
+}
+
+.card .info .thank-you p{
+    font-size: 12px;
+    color: var(--neutral-dark-grayish);
+    margin-top: 10px;
+}
+
+.show{
+    display: block;
+}
+
+.to-hide{
+    display: none;
+}

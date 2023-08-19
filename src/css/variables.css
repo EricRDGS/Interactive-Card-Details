@@ -1,0 +1,7 @@
+:root{
+    --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --primary-red: hsl(0, 100%, 66%);
+    --neutral-light-grayish: hsl(270, 3%, 87%);
+    --neutral-dark-grayish: hsl(279, 6%, 55%);
+    --neutral-very-dark: hsl(278, 68%, 11%);
+}
